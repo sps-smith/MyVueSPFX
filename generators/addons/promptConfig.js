@@ -35,10 +35,10 @@ const pnpJsOptions = [{
         'name': '@pnp/sp',
         'value': '@pnp/sp'
     },
-    {
-        'name': '@pnp/sp-taxonomy',
-        'value': '@pnp/sp-taxonomy'
-    }
+    // {
+    //     'name': '@pnp/sp-taxonomy',
+    //     'value': '@pnp/sp-taxonomy'
+    // }
 ]
 
 const reactLibs = [{
@@ -57,6 +57,7 @@ const defaultLibs = [{
         value: '@pnp/spfx-property-controls',
         checked: true
     }
+
     // Add a new configuration object in here
 ]
 
@@ -73,7 +74,7 @@ const configOptions = [
                 case "react":
                     return defaultLibs.concat(reactLibs);
                 default:
-                    return defaultLibs;
+                    return defaultLibs.concat(pnpJsOptions);
             }
 
         }

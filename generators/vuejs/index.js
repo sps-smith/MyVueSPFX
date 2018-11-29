@@ -106,7 +106,7 @@ module.exports = class extends Generator {
 
         if (config.externals !== undefined) {
             // Add Vuejs entry
-            config.externals.vue = './node_modules/vue/dist/vue.min.js';
+            config.externals.vue = './node_modules/vue/dist/vue.js';
 
             // writing json
             try {

@@ -8,6 +8,13 @@ const configOptions = [
         name: 'tsLint',
         default: false,
         when: answers => answers.framework && answers.framework === 'vuejs'
+    },
+    {
+        type: 'confirm',
+        message: 'Include Vuex:',
+        name: 'VuexLibrary',
+        default: false,
+        when: answers => answers.framework && answers.framework === 'vuejs'
     }
 ]
 
